@@ -82,9 +82,10 @@ body{
     width:30%;
     margin-top: 120px;
     animation:rotation 10s linear infinite;
+    
 }
-.keyframes rotation{
-    from{ tarnsform:rotate(0deg);}to{transform: rotate(359deg);}
+@keyframes rotation{
+    from{tarnsform:rotate(0deg);}to{transform: rotate(359deg);}
 }
 
 .text1 h1{
