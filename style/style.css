@@ -17,6 +17,7 @@ body{
 .container{
     max-width:1300px;
     margin:auto;
+    padding: 0px 15px 0px 15px;
 }
 .navbar_top{
     position:fixed;
@@ -63,41 +64,48 @@ body{
 
 .row1{
     display:flex;
-    width:100%;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height:546px;
+
 }
 .text_section{
-    margin-top: 30px;
+    margin-top:30px;
 }
 .text1{
-    width:50%;
-    margin-top:40px;
+    width:70%;
+    margin-top: 150px;
 }
 .food_1 {
-    max-width: 472px;
+    max-width: 562px;
 }
 .image1{
-    width:50%;
-    text-align: center;
-    margin-top:40px;
+    width:30%;
+    margin-top: 120px;
+    animation:rotation 10s linear infinite;
+}
+.keyframes rotation{
+    from{ tarnsform:rotate(0deg);}to{transform: rotate(359deg);}
 }
 
 .text1 h1{
-    font-size:56px;
-    font-weight:900;
+    font-size:72px;
+    font-weight:700;
     letter-spacing:-3px;
     word-spacing:-2px;
-    line-height:2;
+    line-height:82px;
 }
-.text1 h4{
-    font-size:48px;
-    font-weight:50;
-    letter-spacing:3px;
-    line-height: 1;
+.text1 h3{
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 82px;
+    letter-spacing:5px;
+    word-spacing:5px;
+    margin-left: 4px;
+
 }
 .text1 p{
-    line-height:2;
+    line-height:30px;
+    font-size:18px;
 
 }
 .btn{
@@ -119,37 +127,35 @@ body{
 .image_grp{
     width:50%;
     border:4px solid white;
-    display:flex;
-    padding-left: 20px;
+    position: relative;
+    padding:0px 12px;
+    overflow: hidden;
 }
 .image2{
-    width:30%;
+    width:45%;
     border:2px solid white;
     border-radius:8px;
 }
 .image3{
-    width:20%;
-    position:relative;
-    right:20px;
-    top:35px;
+    position:absolute;
+    right:100px;
+    top:7%;
     border:5px solid white;
     border-radius:8px;
+    width: 45%;
 }
 .text2{
-    height:350px;
     width:50%;
-    padding-right:50px;
 }
 .line_1{
-    font-size:24px;
+    font-size:28px;
     font-weight: 100;
     
 }
 .line_2{
-    font-size:40px;
-    font-weight:900;
-    padding-top: 20px;
-    line-height: 1.2;
+    font-size:45px;
+    font-weight:bold;
+    line-height:55px;
 }
 .num{
     color:orangered;
@@ -169,6 +175,7 @@ body{
 .signature{
     padding-top: 20px;
     line-height: 1.5;
+    max-width: 100px;
 }
 .row2{
     width:100%;
@@ -181,8 +188,9 @@ body{
 }
 
 .salad_images{
-    width:80%;
+    width:100%;
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content:space-between;
     margin:auto;
@@ -201,6 +209,7 @@ body{
     padding: 10px;
     margin: 20px;
     box-shadow: 0px 0px 0px 0px;
+    width: 25%;
 }
 .container1 h3{
     font-size: 24px;
@@ -251,26 +260,26 @@ body{
 .btn_menu{
     color:white;
     background-color:orangered;
-    width: 200px;
+    width: 170px;
     height:45px;
     border-radius:18px;
     border-color:orangered;
     border-style: none;
     font-size: 16px;
     font-weight:700;
-    margin-top: 60px;
+    margin:40px 0px 40px 0px;
 }
 .boxforwrittentext{
-    width:80%;
-    height:350px;
+    width:100%;
     margin:auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .boxe{
-    max-width:28%;
+    max-width:30%;
     display:flex;
+    padding: 40px;
 }
 .mixed_icons{
     color: orangered;
@@ -309,7 +318,6 @@ body{
     border:1px solid black;
 }
 .moretext{
-    height:400px;
     width:50%;
     margin-top: 60px;
     max-width: 584px;
@@ -331,14 +339,12 @@ body{
     line-height:1.5;
 }
 .chefpic{
-    width:50%;
-    padding-left: 90px;
-    height:auto;
+    width:30%;
+    margin: 0px 80px 40px 0px;
+
 }
 .text_container{
-    height:350px;
     width:50%;
-    border:1px solid black;
     margin:auto;
 }
 .text_container q{
@@ -367,12 +373,14 @@ body{
 display: inline-block;
 }
 .galpic{
-
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid white;
 }
 .text_container1{
     width:50%;
-    height:350px;
-    border:1px solid black;
     margin:auto;
 }
 .text_container1 q{
@@ -435,8 +443,7 @@ display: inline-block;
     padding-top: 40px;
 }
  .last_text {
-    height: 250px;
-    width:60%;
+    max-width: 780px;
     margin-top:80px;
     display: flex;
     justify-content: space-between;
@@ -514,6 +521,147 @@ p.line_5{
 a:hover{
     color: orangered;
 }
+img{
+    width: 100%;
+}
+/* media query starts */
+@media  (max-width: 480px) 
+{.text1{
+    width: 100%;
+}
+.text1 h1{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.text1 h3{
+        font-size: 38px;
+        line-height: 18px;
+        word-spacing: 0px;
+        letter-spacing: 3px;
+}
+.food_1{
+    margin-top: 25px;
+}
+.container{
+    padding: 0px 15px 0px 15px;
+}
+.image1{
+    width: 100%;
+}
+.image_grp{
+    width:100%;
+    padding-bottom: 20px;
+}
+.image2{
+    width:60%;
+}
+.image3{
+    width:60%;
+    right:0px;
+    top:16%;
+}
+.text2{
+    width:100%;
+}
+.line_1{
+    margin-top: 20px;
+}
+.line_2{
+    font-size: 43px;
+}
+.div1 h2 {
+    font-size: 36px;
+}
+.container1{
+    width:100%;
+}
+.text3{
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff9e;
+    margin: 13px;
+}
+.text3 h3 {
+    font-size: 35px;
+}  
+.textcontent{
+    display: block;
+}
+.text_container{
+    width: 100%;
+}
+.moretext{
+    width:100%;
+}
+.moretext h3{
+    font-size: 37px;
+}
+.chefpic{
+    width:100%;
+}
+.text_container1{
+    width:100%;
+}
+.para2 {
+    padding: 20px 0px 0px 0px;
+}
+.boxe{
+    width:100%;
+    max-width:100%;
+    padding: 20px;
+}
+.Mail_box{
+    width: 100%;
+}
+.sub_scribe{
+    width:100%;
+    padding: 0px;
+}
+.updates{
+    font-size: 28px;
+}
+.Mail_box{
+    margin: 0px;
+    float: left;
+}
+.fname{
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 8px;
+}
+.btn_grp{
+    width: 100%;
+    border-radius: 18px;
+    text-align: center;
+}
+.last_text{
+    width: 100%;
+    display: block;
+}
+.content_l{
+    margin-top: 40px;
+}
+.content_l p{
+    padding-top: 8px;
+}
+.content_t{
+    margin-top: 42px;
+}
+.content_t p{
+    padding-top: 8px;
+}
+.icon_grp{
+    margin-top: 14px;
+}
+.copyright{
+    width: 100%;
+    padding-right: 2px;
+    margin-top: 172px;
+}
+}
+
+     
 
 
 
